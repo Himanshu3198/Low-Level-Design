@@ -1,16 +1,15 @@
 package org.designPattern.FactoryPattern;
 
-public class ShirtCollection implements Garments {
+public class JeansCollection implements Garments{
     private ClothSize clothSize;
     private ClothColor clothColor;
     double price;
-    private final String type = "SHIRT";
-    public ShirtCollection(ClothSize clothSize, ClothColor clothColor, double price){
+    private final String type = "JEANS";
+    public JeansCollection(ClothSize clothSize, ClothColor clothColor, double price){
         this.clothColor=clothColor;
         this.clothSize=clothSize;
         this.price=price;
     }
-
 
     @Override
     public ClothSize getSize() {
@@ -33,7 +32,7 @@ public class ShirtCollection implements Garments {
     }
     @Override
     public String toString() {
-        return "shirt{" +
+        return "jeans{" +
                 "size=" + clothSize +
                 ", color=" + clothColor +
                 ", price=" + price +
@@ -42,7 +41,7 @@ public class ShirtCollection implements Garments {
 
     @Override
     public void garmentDescription() {
-        System.out.println("=== below is the specification of this T-shirt===");
+        System.out.println("=== below is the specification of this Jeans===");
         System.out.println("color: "+clothColor);
         System.out.println("size: "+clothSize);
         System.out.println("price:"+price);

@@ -1,11 +1,11 @@
 package org.designPattern.FactoryPattern;
 
-public class ShirtCollection implements Garments {
+public class TshirtCollection implements Garments {
     private ClothSize clothSize;
     private ClothColor clothColor;
     double price;
-    private final String type = "SHIRT";
-    public ShirtCollection(ClothSize clothSize, ClothColor clothColor, double price){
+    private final String type = "T-SHIRT";
+    public TshirtCollection(ClothSize clothSize, ClothColor clothColor, double price){
         this.clothColor=clothColor;
         this.clothSize=clothSize;
         this.price=price;
@@ -31,9 +31,10 @@ public class ShirtCollection implements Garments {
     public String getType() {
         return type;
     }
+
     @Override
     public String toString() {
-        return "shirt{" +
+        return "t-shirt{" +
                 "size=" + clothSize +
                 ", color=" + clothColor +
                 ", price=" + price +

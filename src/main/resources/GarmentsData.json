@@ -1,0 +1,304 @@
+[
+  {
+    "type": "PANT",
+    "clothSize": "LARGE",
+    "clothColor": "BLUE",
+    "price": 189.09
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "XXL",
+    "clothColor": "RED",
+    "price": 165.23
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "XXL",
+    "clothColor": "BLUE",
+    "price": 64.9
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "XXL",
+    "clothColor": "GREEN",
+    "price": 71.17
+  },
+  {
+    "type": "PANT",
+    "clothSize": "XL",
+    "clothColor": "RED",
+    "price": 128.4
+  },
+  {
+    "type": "PANT",
+    "clothSize": "XXL",
+    "clothColor": "RED",
+    "price": 62.88
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "XXL",
+    "clothColor": "YELLOW",
+    "price": 68.13
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "MEDIUM",
+    "clothColor": "YELLOW",
+    "price": 105.43
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "MEDIUM",
+    "clothColor": "YELLOW",
+    "price": 55.04
+  },
+  {
+    "type": "PANT",
+    "clothSize": "SMALL",
+    "clothColor": "RED",
+    "price": 162.04
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "XL",
+    "clothColor": "RED",
+    "price": 110.74
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "XL",
+    "clothColor": "RED",
+    "price": 186.25
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "XXL",
+    "clothColor": "BLUE",
+    "price": 160.8
+  },
+  {
+    "type": "PANT",
+    "clothSize": "MEDIUM",
+    "clothColor": "GREEN",
+    "price": 154.63
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "SMALL",
+    "clothColor": "YELLOW",
+    "price": 147.75
+  },
+  {
+    "type": "PANT",
+    "clothSize": "SMALL",
+    "clothColor": "GREEN",
+    "price": 51.27
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "MEDIUM",
+    "clothColor": "BLUE",
+    "price": 163.96
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "SMALL",
+    "clothColor": "YELLOW",
+    "price": 174.35
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "MEDIUM",
+    "clothColor": "BLUE",
+    "price": 159.33
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "LARGE",
+    "clothColor": "BLACK",
+    "price": 115.27
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "XL",
+    "clothColor": "GREEN",
+    "price": 161.73
+  },
+  {
+    "type": "PANT",
+    "clothSize": "SMALL",
+    "clothColor": "BLUE",
+    "price": 57.9
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "XXL",
+    "clothColor": "YELLOW",
+    "price": 114.56
+  },
+  {
+    "type": "PANT",
+    "clothSize": "XL",
+    "clothColor": "GREEN",
+    "price": 115.54
+  },
+  {
+    "type": "PANT",
+    "clothSize": "XXL",
+    "clothColor": "BLUE",
+    "price": 108.35
+  },
+  {
+    "type": "PANT",
+    "clothSize": "LARGE",
+    "clothColor": "BLUE",
+    "price": 145.71
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "SMALL",
+    "clothColor": "YELLOW",
+    "price": 108.5
+  },
+  {
+    "type": "PANT",
+    "clothSize": "SMALL",
+    "clothColor": "BLUE",
+    "price": 184.86
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "MEDIUM",
+    "clothColor": "BLUE",
+    "price": 106.68
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "LARGE",
+    "clothColor": "YELLOW",
+    "price": 149.16
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "XXL",
+    "clothColor": "RED",
+    "price": 95.11
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "SMALL",
+    "clothColor": "YELLOW",
+    "price": 64.51
+  },
+  {
+    "type": "PANT",
+    "clothSize": "XXL",
+    "clothColor": "YELLOW",
+    "price": 163.74
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "LARGE",
+    "clothColor": "BLUE",
+    "price": 57.02
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "MEDIUM",
+    "clothColor": "YELLOW",
+    "price": 123.12
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "XXL",
+    "clothColor": "BLACK",
+    "price": 122.11
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "MEDIUM",
+    "clothColor": "RED",
+    "price": 150.24
+  },
+  {
+    "type": "PANT",
+    "clothSize": "SMALL",
+    "clothColor": "GREEN",
+    "price": 158.59
+  },
+  {
+    "type": "PANT",
+    "clothSize": "MEDIUM",
+    "clothColor": "YELLOW",
+    "price": 67.4
+  },
+  {
+    "type": "PANT",
+    "clothSize": "MEDIUM",
+    "clothColor": "BLUE",
+    "price": 61.55
+  },
+  {
+    "type": "PANT",
+    "clothSize": "XXL",
+    "clothColor": "YELLOW",
+    "price": 62.83
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "SMALL",
+    "clothColor": "RED",
+    "price": 143.49
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "XL",
+    "clothColor": "RED",
+    "price": 134.08
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "XL",
+    "clothColor": "BLUE",
+    "price": 131.31
+  },
+  {
+    "type": "JEANS",
+    "clothSize": "MEDIUM",
+    "clothColor": "BLUE",
+    "price": 190.37
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "MEDIUM",
+    "clothColor": "GREEN",
+    "price": 109.17
+  },
+  {
+    "type": "SHIRT",
+    "clothSize": "XXL",
+    "clothColor": "GREEN",
+    "price": 131.81
+  },
+  {
+    "type": "T-SHIRT",
+    "clothSize": "XXL",
+    "clothColor": "BLACK",
+    "price": 88.59
+  },
+  {
+    "type": "PANT",
+    "clothSize": "SMALL",
+    "clothColor": "RED",
+    "price": 65.32
+  },
+  {
+    "type": "PANT",
+    "clothSize": "MEDIUM",
+    "clothColor": "YELLOW",
+    "price": 82.35
+  }
+]
+
+
