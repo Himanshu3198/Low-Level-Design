@@ -5,7 +5,7 @@ public class PublisherService {
 
      public PublisherService(OperationService operationService){
          this.operationService = operationService;
-     }
+     } 
 
      public void publishMessage(String message){
          operationService.publish(message);

@@ -15,6 +15,7 @@ public class MessagingService {
           msgPublisher.publishMessage("Hi this a mew message");
           msgPublisher.publishMessage("it is all about learning new things");
           msgPublisher.publishMessage("pain of discipline is better than pain of regret");
+        msgPublisher.publishMessage("its not finished until its done");
 
     }
 
