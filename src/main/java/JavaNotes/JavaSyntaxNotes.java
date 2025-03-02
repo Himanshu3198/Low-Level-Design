@@ -1,5 +1,6 @@
+package JavaNotes;
+
 import java.util.*;
-import java.util.stream.Collectors;
 
 class Props {
     int id;
@@ -170,7 +171,7 @@ public class JavaSyntaxNotes {
             System.out.println(studentLst.get(i).id + "__" + studentLst.get(i).name);
         }
 
-//        studentLst.sort((Props a,Props b)->Integer.compare(b.id,a.id));
+//        studentLst.sort((JavaNotes.Props a,JavaNotes.Props b)->Integer.compare(b.id,a.id));
         studentLst.sort((Props a, Props b)->Integer.compare(b.name.length(),a.name.length()));
         for (int i = 0; i < studentLst.size(); i++) {
 

@@ -1,3 +1,5 @@
+package JavaNotes;
+
 public class DoublyList {
 
     public static class Node{

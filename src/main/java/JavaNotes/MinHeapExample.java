@@ -1,3 +1,5 @@
+package JavaNotes;
+
 import java.util.Comparator;
 import java.util.PriorityQueue;
 
