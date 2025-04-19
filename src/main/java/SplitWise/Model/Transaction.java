@@ -2,20 +2,20 @@ package SplitWise.Model;
 
 public class Transaction {
 
-    private final User from;
-    private final User to;
+    private final String from;
+    private final String to;
     private final double amount;
 
-    public Transaction(User from, User to, double amount){
+    public Transaction(String from, String to, double amount){
         this.from = from;
         this.to =  to;
         this.amount = amount;
     }
 
-    public User getFrom() {
+    public String getFrom() {
         return from;
     }
-    public User getTo(){
+    public String getTo(){
         return to;
     }
 

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class Group {
     private final String  groupId;
-    String name;
+    private  final String name;
     private final List<User> members;
     private final List<Expense> expenses;
 
@@ -22,6 +22,7 @@ public class Group {
     public void addExpense(Expense expense){
         expenses.add(expense);
     }
-    public List<User> getMembers() {return this.members;}
-    public List<Expense> getExpenses() {return this.expenses;}
+    public List<User> getMembers() {return members;}
+    public List<Expense> getExpenses() {return expenses;}
+    public String getGroupId() { return  groupId;}
 }
