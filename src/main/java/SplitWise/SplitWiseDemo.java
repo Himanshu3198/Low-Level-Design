@@ -42,8 +42,5 @@ public class SplitWiseDemo {
         service.showTransactions();
     }
 
-
-
-
-
+    
 }
