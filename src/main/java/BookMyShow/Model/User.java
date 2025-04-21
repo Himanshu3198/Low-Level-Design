@@ -9,6 +9,7 @@ public class User {
     private final String password;
     private final String phone;
     private final List<String> bookingHistory;
+    private final List<String> notification;
 
     public String getUserId() {
         return userId;
@@ -34,12 +35,17 @@ public class User {
         return bookingHistory;
     }
 
-    public User(String userId, String userName, String email, String password, String phone, List<String> bookingHistory) {
+    public List<String> getNotification() {
+        return notification;
+    }
+
+    public User(String userId, String userName, String email, String password, String phone, List<String> bookingHistory, List<String> notification) {
         this.userId = userId;
         this.userName = userName;
         this.email = email;
         this.password = password;
         this.phone = phone;
         this.bookingHistory = bookingHistory;
+        this.notification = notification;
     }
 }
