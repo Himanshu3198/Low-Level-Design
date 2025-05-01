@@ -39,6 +39,13 @@ public class User {
         return notification;
     }
 
+    public void addNotification(String message){
+        notification.add(message);
+    }
+    public void addBookingHistory(String message){
+        bookingHistory.add(message);
+    }
+
     public User(String userId, String userName, String email, String password, String phone, List<String> bookingHistory, List<String> notification) {
         this.userId = userId;
         this.userName = userName;
