@@ -1,5 +1,6 @@
 package BookMyShow.Model;
 
+import java.util.HashMap;
 import java.util.Map;
 import BookMyShow.ENUM.Status;
 
@@ -7,10 +8,10 @@ public class Show {
     private final String showId;
     private final Movies movie;
     private final String showTime;
-    private Map<String,Seats> seats;
+    private Map<String,Seats> seats = new HashMap<>();
 
 
-    public Show(String showId, Movies movie, String showTime, Map<String, Seats> seats,int seatCapacity) {
+    public Show(String showId, Movies movie, String showTime,int seatCapacity) {
         this.showId = showId;
         this.movie = movie;
         this.showTime = showTime;

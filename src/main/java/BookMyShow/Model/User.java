@@ -1,5 +1,6 @@
 package BookMyShow.Model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class User {
@@ -10,6 +11,7 @@ public class User {
     private final String phone;
     private final List<String> bookingHistory;
     private final List<String> notification;
+    private Double wallet;
 
     public String getUserId() {
         return userId;
@@ -31,6 +33,12 @@ public class User {
         return phone;
     }
 
+    public Double getWalletAmount(){ return  wallet;}
+
+    public void addWalletAmount(Double amount){
+        wallet  = wallet + amount;
+    }
+
     public List<String> getBookingHistory() {
         return bookingHistory;
     }
@@ -46,13 +54,14 @@ public class User {
         bookingHistory.add(message);
     }
 
-    public User(String userId, String userName, String email, String password, String phone, List<String> bookingHistory, List<String> notification) {
+    public User(String userId, String userName, String email, String password, String phone) {
         this.userId = userId;
         this.userName = userName;
         this.email = email;
         this.password = password;
         this.phone = phone;
-        this.bookingHistory = bookingHistory;
-        this.notification = notification;
+        this.wallet = 0.0;
+        this.bookingHistory = new ArrayList<>();
+        this.notification = new ArrayList<>();
     }
 }
