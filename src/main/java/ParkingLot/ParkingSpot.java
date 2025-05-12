@@ -7,10 +7,10 @@ public class ParkingSpot {
     private Vehicle currentVehicle;
     private final VehicleType vehicleType;
 
-    public ParkingSpot(int id, VehicleType vehicleType, Vehicle currentVehicle) {
+    public ParkingSpot(int id, VehicleType vehicleType) {
         this.id = id;
         this.vehicleType = vehicleType;
-        this.currentVehicle = currentVehicle;
+        this.currentVehicle = null;
     }
 
     public int getId() {
@@ -37,7 +37,7 @@ public class ParkingSpot {
         return false;
     }
     public synchronized void releaseVehicle(){
-        System.out.println("Vehicle has been released:"+currentVehicle.getVehiclePlate());
+//        System.out.println("Vehicle has been released:"+currentVehicle.getVehiclePlate());
         this.currentVehicle = null;
     }
 }
