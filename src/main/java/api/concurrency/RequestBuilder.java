@@ -8,8 +8,14 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
 
-public class RequestBuilder {
+class RequestBuilder {
     public static final HttpClient httpClient = HttpClient.newHttpClient();
     public static final Gson gson = new Gson();
     public static JsonObject getJsonFromApi(String url) throws IOException, InterruptedException {
@@ -31,20 +37,36 @@ public class RequestBuilder {
             return null;
         }
     }
-    public static void main(String[] args) {
-        System.out.println("hello world..");
-        String id = "10";
+
+    public static  void makeRequest(int id){
         String url = "https://jsonplaceholder.typicode.com/posts/"+id;
         try{
             JsonObject jsonResponse = getJsonFromApi(url);
             if(jsonResponse != null){
-                System.out.println("Response Received :"+jsonResponse.toString());
+                System.out.println(Thread.currentThread().getName()+" Response Received :"+jsonResponse.toString());
             }else{
-                System.out.println("No record found with ID: "+id);
+                System.out.println(Thread.currentThread().getName()+" No record found with ID: "+id);
             }
         }catch (Exception e){
             e.printStackTrace();
         }
+    }
+    public static void main(String[] args) {
+        System.out.println("hello world..");
+        List<Integer> list  = Arrays.asList(1,3,2,4,5,6,7,8,9,10,12,23,11);
+        ExecutorService executor = Executors.newFixedThreadPool(4);
+        try{
+            for(Integer record:list){
+                final Integer taskRecord = record;
+                executor.submit(()->makeRequest(taskRecord));
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }finally {
+            executor.shutdown();
+        }
+
+
 
     }
 }
