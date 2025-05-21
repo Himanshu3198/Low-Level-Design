@@ -1,7 +1,6 @@
 package DistribuedJobScheduler;
 
 import DistribuedJobScheduler.Builder.JobBuilder;
-import DistribuedJobScheduler.Factory.JobFactory;
 import DistribuedJobScheduler.Job.Job;
 import DistribuedJobScheduler.JobValidator.JobNameValidator;
 import DistribuedJobScheduler.JobValidator.JobValidator;
@@ -20,7 +19,7 @@ public class JobSchedulerSystem {
 
         JobValidator validatorChain = new NotNullValidator().linkWith(new JobNameValidator());
 
-        Job job1 = JobFactory.createSimpleJob("Email Job",()->System.out.println("Sending emails"));
+        Job job1 = new JobBuilder().setName("Email Job").setTask((v)-> System.out.println("Sending email to peoples")).build();
 
         if(validatorChain.validate(job1)){
             scheduler.schedule(job1,new ImmediateStrategy());
