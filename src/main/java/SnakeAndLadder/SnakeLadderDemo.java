@@ -1,6 +1,5 @@
 package SnakeAndLadder;
 
-import TicTacToe.Game;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,23 +8,21 @@ import java.util.Scanner;
 public class SnakeLadderDemo {
 
     public static void main(String[] args) {
-        System.out.println("====Welcome to Snake Ladder Game====");
+        System.out.println("==== Welcome to Snake & Ladder Game ====");
 
-        System.out.println("Enter No of players");
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of players: ");
         int noOfPlayers = sc.nextInt();
-        List<Player>  players = new ArrayList<>();
-        System.out.println("====Please enter Players name to play!====");
-        for(int i=1;i<=noOfPlayers;i++){
+        sc.nextLine(); // consume newline
+
+        List<Player> players = new ArrayList<>();
+        for (int i = 1; i <= noOfPlayers; i++) {
+            System.out.print("Enter name for player " + i + ": ");
             String name = sc.nextLine();
-            Player player = new Player()
-                    .setName(name)
-                    .setId(i)
-                    .setPos(0);
-            players.add(player);
+            players.add(new Player().setId(i).setName(name).setPos(0));
         }
 
-        GameManger game = new GameManger(players);
-        game.startGame();
+        GameManager gameManager = new GameManager(players, new NormalDice());
+        gameManager.startGame();
     }
 }

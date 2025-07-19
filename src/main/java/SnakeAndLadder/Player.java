@@ -26,7 +26,7 @@ public class Player {
         return pos;
     }
     public Player setPos(int pos){
-        this.pos = this.pos;
+        this.pos = pos;
         return this;
     }
 

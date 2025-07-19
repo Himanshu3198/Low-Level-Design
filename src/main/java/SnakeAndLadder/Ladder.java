@@ -1,19 +1,5 @@
 package SnakeAndLadder;
 
-public class Ladder {
+public record Ladder(int top, int bottom) {
 
-    private int top;
-    private int bottom;
-
-    public Ladder(int top,int bottom){
-        this.top = top;
-        this.bottom = bottom;
-    }
-
-    public int getTop(){
-        return this.top;
-    }
-    public int getBottom(){
-        return this.bottom;
-    }
 }

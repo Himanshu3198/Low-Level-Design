@@ -1,88 +1,70 @@
 package SnakeAndLadder;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Board {
     private final int size = 100;
-    private List<Snake> snakes ;
-    private List<Ladder> ladders ;
-    private int []board ;
-    public Board(){
-        board = new int[size];
-        snakes = new ArrayList<>();
-        ladders = new ArrayList<>();
+    private final Map<Integer, Integer> snakes = new HashMap<>();
+    private final Map<Integer, Integer> ladders = new HashMap<>();
+    private final int[] board = new int[size + 1];
+
+    public Board() {
         initializeBoard();
     }
 
+    private void initializeBoard() {
+        snakes.put(98, 8);
+        snakes.put(85, 60);
+        snakes.put(60, 40);
+        snakes.put(40, 14);
 
-
-    private void initializeBoard(){
-//        add snakes
-        snakes.add(new Snake(98,8));
-        snakes.add(new Snake(15,5));
-        snakes.add(new Snake(85,60));
-        snakes.add(new Snake(60,40));
-        snakes.add(new Snake(40,14));
-        snakes.add(new Snake(21,5));
-//        add ladder
-        ladders.add(new Ladder(20,2));
-        ladders.add(new Ladder(42,10));
-        ladders.add(new Ladder(96,6));
-        ladders.add(new Ladder(20,3));
-        ladders.add(new Ladder(88,34));
-        ladders.add(new Ladder(72,32));
-        ladders.add(new Ladder(56,24));
-        ladders.add(new Ladder(47,16));
-        ladders.add(new Ladder(33,13));
-
+        ladders.put(2, 20);
+        ladders.put(10, 42);
+        ladders.put(6, 96);
+        ladders.put(3, 20);
+        ladders.put(34, 88);
+        ladders.put(32, 72);
     }
 
-    public int getPositionAfterSnakeOrLadder(int position){
-
-        for(Ladder ladder:ladders){
-            if(ladder.getBottom() == position){
-                System.out.println("======Yay found ladder!=====");
-                return ladder.getTop();
-            }
+    public int getPositionAfterSnakeOrLadder(int pos) {
+        if (snakes.containsKey(pos)) {
+            System.out.println("Oops! Bitten by snake at: " + pos);
+            return snakes.get(pos);
+        } else if (ladders.containsKey(pos)) {
+            System.out.println("Yay! Climbed ladder at: " + pos);
+            return ladders.get(pos);
         }
-        for(Snake snake:snakes){
-            if(snake.getHead() == position){
-                System.out.println("======Oops Snake bite======");
-                return snake.getTail();
-            }
-        }
-        return position;
+        return pos;
     }
 
-    public void displayBoard(){
-
-        System.out.println("========BOARD=======");
-        for(int i=0;i<100;i++){
-            if(i%10==0){
-                System.out.println();
-            }
-            System.out.print(board[i]+" ");
+    public void displayBoard() {
+        System.out.println("\n======= BOARD =======");
+        for (int i = 1; i <= size; i++) {
+            System.out.print((board[i] != 0 ? board[i] : ".") + " ");
+            if (i % 10 == 0) System.out.println();
         }
     }
 
-    public boolean markPlayerPosition(int pos,Player player){
-
-        if(pos>=0 && pos< size){
+    public boolean markPlayerPosition(int pos, Player player) throws InterruptedException {
+        if (pos > size) {
+            System.out.println("Roll exceeds board limit. Try again!");
+            return false;
+        } else if (pos == size) {
+            player.setPos(pos);
+            System.out.println("🎉 Player " + player.getName() + " wins! 🎉");
+            Thread.sleep(3000);
+            return true;
+        } else if (pos < 0) {
+            throw new InvalidPositionException("Invalid position: " + pos);
+        } else {
+            board[player.getPos()] = 0;
+            if (board[pos] != 0) {
+                System.out.println("⚠️ Multiple players at same position!");
+            }
             board[pos] = player.getId();
-            System.out.println("Player :"+player.getName()+" is at position: "+board[pos]);
             player.setPos(pos);
             return false;
-        }else if(pos == size){
-            player.setPos(pos);
-            System.out.println("Player: "+player.getName()+"reach the: "+size);
-            System.out.println("Player Win the game!"+player.getName());
-            System.out.println("=====Game Over======");
-            return true;
-        }else{
-            throw new InvalidPositionException("Invalid position"+pos);
         }
     }
-
-
 }
