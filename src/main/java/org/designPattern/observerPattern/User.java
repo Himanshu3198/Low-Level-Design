@@ -1,5 +1,7 @@
 package org.designPattern.observerPattern;
 
+import DistribuedJobScheduler.Job.Job;
+
 public class User implements Observer{
     private String name;
     public User(String name){
@@ -8,5 +10,10 @@ public class User implements Observer{
     @Override
     public void update(String message){
         System.out.println(name+" received "+message);
+    }
+
+    @Override
+    public void update(Job job) {
+
     }
 }

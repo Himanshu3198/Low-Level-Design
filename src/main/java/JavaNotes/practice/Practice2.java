@@ -1,4 +1,4 @@
-package JavaNotes;
+package JavaNotes.practice;
 
 public class Practice2 {
 

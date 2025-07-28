@@ -1,13 +1,9 @@
-package JavaNotes;
-
-import com.google.gson.internal.bind.util.ISO8601Utils;
+package JavaNotes.practice;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.concurrent.Executor;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import java.util.concurrent.ThreadPoolExecutor;
 
 public class Practice4 {
 

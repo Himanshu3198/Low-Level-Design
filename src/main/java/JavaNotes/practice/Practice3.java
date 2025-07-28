@@ -1,4 +1,4 @@
-package JavaNotes;
+package JavaNotes.practice;
 
 import java.util.ArrayList;
 import java.util.List;
