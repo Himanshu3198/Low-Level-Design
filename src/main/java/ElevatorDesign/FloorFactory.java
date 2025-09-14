@@ -19,6 +19,9 @@ public class FloorFactory {
             case FOUR -> {
                 return 4;
             }
+            case FIVE -> {
+                return 5;
+            }
             default -> throw new InvalidFloorException("The elevator does not go to this floor");
         }
     }

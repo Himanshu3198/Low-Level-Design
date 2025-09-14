@@ -1,0 +1,31 @@
+> Task :ElevatorDesign.ElevatorDemo.main()
+[Floor 3, Direction UP]
+  Pickup at floor: THREE
+[Floor 4, Direction UP]
+  Pickup at floor: FOUR
+[Floor 5, Direction UP]
+  Pickup at floor: FIVE
+==> Switching direction to DOWN
+[Floor 5, Direction DOWN]
+[Floor 4, Direction DOWN]
+[Floor 3, Direction DOWN]
+  Drop at floor: THREE
+[Floor 2, Direction DOWN]
+  Drop at floor: TWO
+  Pickup at floor: TWO
+[Floor 1, Direction DOWN]
+  Pickup at floor: ONE
+[Floor 0, Direction DOWN]
+  Drop at floor: GROUND
+  Drop at floor: GROUND
+==> Switching direction to UP
+[Floor 0, Direction UP]
+[Floor 1, Direction UP]
+[Floor 2, Direction UP]
+[Floor 3, Direction UP]
+  Drop at floor: THREE
+==> Switching direction to DOWN
+
+BUILD SUCCESSFUL in 1s
+3 actionable tasks: 2 executed, 1 up-to-date
+17:56:32: Execution finished ':ElevatorDesign.ElevatorDemo.main()'.
