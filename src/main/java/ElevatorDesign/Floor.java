@@ -1,6 +1,6 @@
 package ElevatorDesign;
 
-public enum Floors {
+public enum Floor {
     ONE,
     TWO,
     THREE,
