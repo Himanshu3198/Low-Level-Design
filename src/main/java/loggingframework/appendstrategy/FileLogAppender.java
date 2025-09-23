@@ -15,8 +15,8 @@ public class FileLogAppender implements AppenderStrategy{
     @Override
     public void append(LogMessage logMessage) {
 
-        try(FileWriter writer = new FileWriter(filePath)){
-            writer.append(logMessage.getMessage());
+        try(FileWriter writer = new FileWriter(filePath,true)){
+            writer.append(logMessage.toString()+"\n");
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

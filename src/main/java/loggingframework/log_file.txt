@@ -1,0 +1,10 @@
+[WARNING] 2025-09-23T22:26:02.527111400 this is warning about memory threshold
+[ERROR] 2025-09-23T22:27:24.400267900 Printing logs in file now
+[INFO] 2025-09-23T22:27:24.400267900 this is info about loggingFramework
+[WARNING] 2025-09-23T22:27:24.400267900 this is warning about memory threshold
+[ERROR] 2025-09-23T22:30:40.199 Printing logs in file now
+[INFO] 2025-09-23T22:30:40.199 this is info about loggingFramework
+[WARNING] 2025-09-23T22:30:40.199 this is warning about memory threshold
+[ERROR] 2025-09-23T22:38:06.018 Printing logs in file now
+[INFO] 2025-09-23T22:38:06.018 this is info about loggingFramework
+[WARNING] 2025-09-23T22:38:06.034 this is warning about memory threshold

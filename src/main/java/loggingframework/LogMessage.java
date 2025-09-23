@@ -1,6 +1,7 @@
 package loggingframework;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 public class LogMessage {
 
@@ -8,10 +9,11 @@ public class LogMessage {
     private LogLevel logLevel;
     private LocalDateTime timeStamp;
 
-    public LogMessage(String message, LogLevel logLevel, LocalDateTime timeStamp) {
+    public LogMessage(String message, LogLevel logLevel) {
         Message = message;
         this.logLevel = logLevel;
-        this.timeStamp = timeStamp;
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS");
+        this.timeStamp = LocalDateTime.parse(LocalDateTime.now().format(formatter));
     }
 
     public String getMessage() {
@@ -39,5 +41,9 @@ public class LogMessage {
     public LogMessage setTimeStamp(LocalDateTime timeStamp) {
         this.timeStamp = timeStamp;
         return this;
+    }
+
+    public String toString(){
+        return "[" + logLevel.name() + "] " + timeStamp.toString() + " "+ getMessage();
     }
 }
