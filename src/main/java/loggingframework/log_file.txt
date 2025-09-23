@@ -8,3 +8,6 @@
 [ERROR] 2025-09-23T22:38:06.018 Printing logs in file now
 [INFO] 2025-09-23T22:38:06.018 this is info about loggingFramework
 [WARNING] 2025-09-23T22:38:06.034 this is warning about memory threshold
+[ERROR] 2025-09-23T22:43:23.928 Printing logs in file now
+[INFO] 2025-09-23T22:43:23.928 this is info about loggingFramework
+[WARNING] 2025-09-23T22:43:23.928 this is warning about memory threshold

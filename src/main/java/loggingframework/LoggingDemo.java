@@ -1,8 +1,7 @@
 package loggingframework;
 
 import loggingframework.appendstrategy.FileLogAppender;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
 
 public class LoggingDemo {
 
