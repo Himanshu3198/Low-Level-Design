@@ -1,0 +1,60 @@
+This is bus ticket booking LLD
+Bus created successfully: 2
+Found buses:
+BusId: 2
+BusNumber: KA1234
+Bus Route-[Departure,Arrival] [ delhi,agra ]
+Bus Schedule-[startTime,endTime] [ 10:00PM,12:00PM ]
+Bus Fare: 500.0
+SeatId: 1, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 2, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 3, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 4, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 5, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 6, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 7, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 8, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 9, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 10, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 11, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 12, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 13, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 14, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 15, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 16, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 17, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 18, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 19, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 20, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 21, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 22, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 23, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 24, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 25, SeatType: REGULAR, SeatStatus: AVAILABLE
+Booking confirmed: 101
+Booking id: 101 status: CONFIRMED
+SeatId: 1, SeatType: REGULAR, SeatStatus: BOOKED
+SeatId: 2, SeatType: REGULAR, SeatStatus: BOOKED
+SeatId: 3, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 4, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 5, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 6, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 7, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 8, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 9, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 10, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 11, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 12, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 13, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 14, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 15, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 16, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 17, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 18, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 19, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 20, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 21, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 22, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 23, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 24, SeatType: REGULAR, SeatStatus: AVAILABLE
+SeatId: 25, SeatType: REGULAR, SeatStatus: AVAILABLE
