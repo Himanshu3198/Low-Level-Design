@@ -1,0 +1,9 @@
+ Task :AmazonLockerSystem.LockerSystemDemo.main()
+
+--- Assign Lockers ---
+Locker 101 assigned to package 1 | PIN: 4622
+Locker 202 assigned to package 2 | PIN: 5778
+
+--- Pickup Attempt ---
+Incorrect PIN!
+Locker 101 opened. Package collected.
