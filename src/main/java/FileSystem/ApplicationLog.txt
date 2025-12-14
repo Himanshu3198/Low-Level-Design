@@ -1,0 +1,88 @@
+17:39:10: Executing ':FileSystem.FileSystemDemo.main()'…
+
+> Task :compileJava
+> Task :processResources UP-TO-DATE
+> Task :classes
+
+> Task :FileSystem.FileSystemDemo.main()
+===== FILE SYSTEM (UNIX STYLE) =====
+Added [photos] to directory [hs-dir]
+Added [documents] to directory [hs-dir]
+Added [videos] to directory [hs-dir]
+Added [myphoto1] to directory [photos]
+Added [myphoto2] to directory [photos]
+Added [resume] to directory [documents]
+Added [offer_letter] to directory [documents]
+Added [movie1] to directory [videos]
+Added [movie2] to directory [videos]
+
+--- INITIAL FILE SYSTEM ---
+ [DIR] hs-dir
+   [DIR] photos
+     myphoto1.jpg (500 bytes)
+     myphoto2.jpg (400 bytes)
+   [DIR] documents
+     resume.pdf (500 bytes)
+     offer_letter.pdf (400 bytes)
+   [DIR] videos
+     movie1.mp4 (1500 bytes)
+     movie2.mp4 (800 bytes)
+
+--- RENAME FILE ---
+Renaming resume to updated_resume
+ [DIR] hs-dir
+   [DIR] photos
+     myphoto1.jpg (500 bytes)
+     myphoto2.jpg (400 bytes)
+   [DIR] documents
+     updated_resume.pdf (500 bytes)
+     offer_letter.pdf (400 bytes)
+   [DIR] videos
+     movie1.mp4 (1500 bytes)
+     movie2.mp4 (800 bytes)
+
+--- MOVE FILE ---
+Removed [myphoto2] from directory [photos]
+Added [myphoto2] to directory [hs-dir]
+myphoto2 moved to directory hs-dir
+ [DIR] hs-dir
+   [DIR] photos
+     myphoto1.jpg (500 bytes)
+   [DIR] documents
+     updated_resume.pdf (500 bytes)
+     offer_letter.pdf (400 bytes)
+   [DIR] videos
+     movie1.mp4 (1500 bytes)
+     movie2.mp4 (800 bytes)
+   myphoto2.jpg (400 bytes)
+
+--- DELETE DIRECTORY (videos) ---
+Removed [videos] from directory [hs-dir]
+videos deleted successfully
+ [DIR] hs-dir
+   [DIR] photos
+     myphoto1.jpg (500 bytes)
+   [DIR] documents
+     updated_resume.pdf (500 bytes)
+     offer_letter.pdf (400 bytes)
+   myphoto2.jpg (400 bytes)
+
+--- FILTER: PDF FILES ---
+ updated_resume.pdf (500 bytes)
+ offer_letter.pdf (400 bytes)
+
+--- FILTER: JPG FILES BETWEEN 300-600 BYTES ---
+ myphoto1.jpg (500 bytes)
+ myphoto2.jpg (400 bytes)
+
+Total size of root: 1800 bytes
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 3s
+3 actionable tasks: 2 executed, 1 up-to-date
+17:39:14: Execution finished ':FileSystem.FileSystemDemo.main()'.
