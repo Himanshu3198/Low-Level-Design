@@ -3,7 +3,9 @@
 This repository contains the **High Level Design (HLD) of a Twitter-like system**, focusing on scalability, availability, and low-latency feed generation.  
 The design follows **real-world distributed system principles** and is suitable for **system design interviews**.
 
-📎 **Architecture Diagram:** `twitter01.drawio.png`
+## Architecture Diagram
+
+![Twitter High Level Design](./twitter01.drawio.png)
 
 ---
 
